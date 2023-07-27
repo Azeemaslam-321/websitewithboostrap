@@ -1,0 +1,460 @@
+<!doctype html>
+<html lang="en">
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous">
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+      
+        <title>MyWebsite</title>
+        <style>
+            .navbar-custom {
+              background-color:whitesmoke;
+              font-size: 20px;
+            }
+              .container-fluid {
+                  padding-top: 20px; 
+                  padding-left: 20px;
+                  padding-right: 20px;
+                }
+              .nav-item{
+            color: black;
+              }
+            
+              .link-item {
+                color: #007bff; 
+                text-decoration: none;
+                padding: 5px; 
+                display: block; 
+                transition: all 0.3s; 
+              }
+            
+              .link-item:hover {
+                background-color: #007bff;
+                color: #fff; 
+                border-radius: 5px; 
+              }
+              footer {
+                background-color: #343a40;
+                color: #fff;
+                padding: 20px 0; 
+              }
+              
+            
+              footer h5 {
+                font-size: 20px;
+                font-weight: bold;
+                margin-bottom: 15px; 
+              }
+              
+             
+              footer p {
+                font-size: 16px;
+                margin-bottom: 10px;
+              }
+              
+            
+              .link-item {
+                color: #fff;
+                text-decoration: none;
+                display: inline-block;
+                margin-bottom: 5px; 
+              }
+              
+              .link-item:hover {
+                color: #007bff; 
+              }
+              
+              
+              .social-icons a {
+                font-size: 24px;
+                color: #fff;
+                text-decoration: none;
+                padding: 10px 15px;
+                margin: 0 5px;
+                border-radius: 50%; 
+                transition: background-color 0.3s; 
+              }
+              
+              .social-icons a:hover {
+                background-color: #007bff;
+              }
+              .conclusion-heading {
+                font-size: 32px;
+                font-weight: bold;
+                color: #007bff; 
+                margin-bottom: 20px;
+              }
+              
+              
+              .conclusion-text {
+                font-size: 24px;
+                line-height: 1.6;
+                color: #444; 
+                margin-bottom: 25px;
+              }
+              
+          
+              .conclu {
+                padding: 30px;
+                background-color: #f8f8f8;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+              }
+  
+.navbar-custom {
+    background-color: #007bff; }
+  
+  .navbar-custom .navbar-brand {
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .navbar-custom .navbar-nav .nav-link {
+    color: #fff; 
+    font-weight: bold;
+  }
+  
+  .navbar-custom .navbar-nav .nav-link:hover {
+    color: #fff;
+    background-color: transparent;
+  }
+  
+  .navbar-custom .navbar-toggler-icon {
+    background-color: #fff; 
+  }
+  
+  .navbar-custom .form-control {
+    border-color: #fff; 
+    color: #000;
+  }
+  
+  .navbar-custom .form-control::placeholder {
+    color: #666;
+  }
+  
+
+  footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+ 
+.carousel-item img {
+    height: 600px;
+    width: 400px;
+    object-fit: cover; 
+  }
+  
+ 
+  .carousel-caption {
+    background-color: rgba(0, 0, 0, 0.6); 
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+ 
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: #007bff; 
+    color: #fff; 
+    padding: 5px; 
+  }
+  
+  
+  .carousel-control-prev:hover,
+  .carousel-control-next:hover {
+    background-color: #0056b3; 
+  }
+.fs-5 {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333; 
+  }
+  
+  
+  .fluid {
+    padding: 30px;
+    background-color: #f8f8f8; 
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+  }
+
+.profile-card {
+    margin-bottom: 20px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border: none; 
+    border-radius: 10px; }
+  
+  .profile-card img {
+    height: 200px; 
+    object-fit: cover;
+    border-top-left-radius: 10px; 
+    border-top-right-radius: 10px;
+  }
+  
+  .profile-card .card-body {
+    background-color: #f8f8f8; 
+    padding: 15px; 
+  }
+  
+  .profile-card .card-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .profile-card .card-text {
+    color: #666; 
+  }
+  
+ 
+  .profile-card:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1); 
+    transform: translateY(-2px); 
+  }
+  
+                
+</style>
+    </head>
+    <body>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+
+        <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse"
+                    id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page"
+                                href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Menu</a>
+                    </li>
+
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search"
+                        placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-dark" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div id="carouselExampleCaptions" class="carousel slide"
+        data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="0" class="active" aria-current="true"
+                aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img
+                    src="https://images.unsplash.com/photo-1684369175809-f9642140a1bd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=942&q=80"
+                    class="d-block w-100" alt="Image"
+                    style="height: 600px; width: 400px;">
+                <div class="carousel-caption d-none d-md-block">
+
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img
+                    src="https://plus.unsplash.com/premium_photo-1682124769864-f6578cb6329b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1332&q=80 "
+                    class="d-block w-100" alt="..."
+                    style="height: 600px; width: 400px;">
+                <div class="carousel-caption d-none d-md-block">
+
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img
+                    src="https://plus.unsplash.com/premium_photo-1681297399454-fec2cd6c0618?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1332&q=80"
+                    class="d-block w-100" alt="..."
+                    style="height: 600px; width: 400px;">
+                <div class="carousel-caption d-none d-md-block">
+
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button"
+            data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button"
+            data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <div class="container-fluid" class="fluid">
+
+        <p class="fs-5">AI (Artificial Intelligence) Introduction :
+
+            Humans have been, are, and will forever be thirsty to invent
+            things that would make their lives easier and better by a
+            thousandfold. The capacity of what a human mind can do has
+            always baffled me. One such major invention would be what is
+            called as AI- Artificial Intelligence. Wouldn’t it be great if
+            machines could think? That’s precisely what AI is. We humans
+            have natural intelligence. But if machines can think, it’d be
+            artificial. So, AI is just a collective term for machines that
+            can think.
+
+            What-is-AI-Artificial-Intelligence
+
+            Now here are some examples of AI in real life. Robots are what
+            come to mind first. They are machine replicas of human beings.
+            They can think for themselves, take important decisions on their
+            own without human help. Not all artificially intelligent
+            machines need to look like human beings though. Some of the
+            other examples include self-driving cars or Amazon Alexa or even
+            Siri. One other important application can be speech recognition.
+            Remember how you ask google by speaking instead of typing what
+            you have to search for, into the search bar? That’s one of the
+            applications right there. There are so many more applications
+            but let me get on to other topics.
+        </p>
+    </div>
+    <div class="container">
+        <div class="row">
+
+            <div class="col-sm-4">
+                <div class="card">
+                    <img
+                        src="https://images.unsplash.com/photo-1534723328310-e82dad3ee43f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1936&q=80"
+                        class="card-img-top" alt="Profile 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Da Vinci Surgical System (medical robot)</h5>
+                        <p class="card-text"> The Da Vinci Surgical System is a sophisticated robotic platform designed to assist surgeons in performing minimally invasive surgery. It consists of robotic arms with surgical instruments and a high-definition 3D camera. Surgeons control the system from a console and can perform precise movements with enhanced dexterity, enabling complex procedures with smaller incisions, reduced scarring, and faster recovery for patients.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="card">
+                    <img
+                        src="https://images.unsplash.com/photo-1593376893114-1aed528d80cf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=415&q=80"
+                        class="card-img-top" alt="Profile 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Robonaut (NASA's humanoid robot)</h5>
+                        <p class="card-text"> Robonaut is a humanoid robot developed by NASA and General Motors. It was designed to work alongside astronauts on the International Space Station (ISS) and perform tasks that are dangerous or repetitive. Robonaut has a humanoid upper body with dexterous hands, which allows it to handle tools and perform delicate tasks. Its development aims to explore how robots can assist humans in space exploration and other hazardous environments.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="card">
+                    <img
+                        src="https://images.unsplash.com/photo-1593376853899-fbb47a057fa0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=415&q=80"
+                        class="card-img-top" alt="Profile 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Sophia (humanoid robot)</h5>
+                        <p class="card-text">Sophia is a humanoid robot developed by Hanson Robotics. It is known for its advanced artificial intelligence and expressive facial features, making it appear remarkably human-like. Sophia has the ability to process speech, recognize faces, and engage in conversations with people. It has been showcased at various events worldwide and has sparked discussions about the potential future of AI and human-robot interaction.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5  " class="conclu">
+        <div class="row">
+          <div class="col">
+            <h2 class="conclusion-heading">Conclusion</h2>
+            <p class="conclusion-text">
+              Thank you for visiting our website! We hope you found the information
+              provided useful and insightful. Our team has worked hard to bring you
+              the latest content and features to enhance your experience.
+            </p>
+            <p class="conclusion-text">
+              If you have any questions or feedback, please don't hesitate to contact
+              us. We are always open to suggestions and welcome your thoughts on how
+              we can improve our services.
+            </p>
+            <p class="conclusion-text">
+              Stay tuned for more exciting updates and news. We look forward to
+              serving you again in the future.
+            </p>
+          </div>
+        </div>
+      </div>
+  
+  
+<footer class="bg-dark text-white py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+            <h5>Contact Us</h5>
+            <p>Email: azeemaslam136@gmail.com <i class="bi bi-envelope-at-fill"></i></p>
+            <p>Phone: 6393410170 <i class="bi bi-telephone-outbound-fill"></i></p>
+          </div>
+         
+        <div class="col-md-6">
+          <h5>Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="link-item">Home</a></li>
+            <li><a href="#" class="link-item">About</a></li>
+            <li><a href="#" class="link-item">Services</a></li>
+            <li><a href="#" class="link-item">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <footer class="bg-dark text-white text-center py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col social-icons">
+          <a href="https://www.instagram.com/" target="_blank" class="text-white me-3">
+            <i class="bi bi-instagram"></i>
+          </a>
+          <a href="https://twitter.com/" target="_blank" class="text-white me-3">
+            <i class="bi bi-twitter"></i>
+          </a>
+          <a href="https://www.linkedin.com/" target="_blank" class="text-white">
+            <i class="bi bi-linkedin"></i>
+          </a>
+        </div>
+      </div>
+      <div class="row mt-2">
+        <div class="col">
+          &copy; 2023 Your AI Tech. All rights reserved.
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+    </body>
+</html>
